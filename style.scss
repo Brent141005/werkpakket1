@@ -1,0 +1,29 @@
+$primary-color: red;
+$secondary-color: yellow;
+$tertiary-color: blue;
+
+$font-lg: 50px;
+$font-md: 25px;
+$font-sm: 12px;
+
+nav {
+  background-color: $primary-color;
+  @include margin-padding(5px);
+
+  ul {
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: $font-md;
+        color: $primary-color;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
