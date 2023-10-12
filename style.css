@@ -180,6 +180,11 @@ nav {
 #producten .product .add-to-cart:hover {
   background-color: #005aa3;
 }
+#producten .product img {
+  width: 250px;
+  height: 170px;
+  border-radius: 10%;
+}
 
 /* Stijlen voor de footer */
 footer {
@@ -299,6 +304,60 @@ footer .copyright p {
 }
 .login-container .login-form button.login-button:hover {
   background-color: #005aa3;
+}
+
+.loginfooter {
+  position: absolute;
+}
+
+/* Stijlen voor de productencontainer op de specifieke pagina */
+.rijenproducten #producten {
+  text-align: center;
+  margin-top: 100px;
+}
+.rijenproducten #producten h1 {
+  font-size: 1.5rem;
+}
+.rijenproducten #producten .product-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.rijenproducten #producten .product {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.rijenproducten #producten .product h2 {
+  font-size: 1.2rem;
+}
+.rijenproducten #producten .product p {
+  margin: 10px 0;
+}
+.rijenproducten #producten .product .add-to-cart {
+  background-color: #0074d9;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.rijenproducten #producten .product .add-to-cart:hover {
+  background-color: #005aa3;
+}
+.rijenproducten #producten .product img {
+  width: 250px;
+  height: 170px;
+  border-radius: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
