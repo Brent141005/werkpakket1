@@ -96,9 +96,19 @@ nav {
   left: 50%; /* Plaats de knop horizontaal in het midden van de container */
   transform: translate(-50%, -50%); /* Centreer zowel verticaal als horizontaal */
 }
-
 .image-container button:hover {
   background-color: #fff;
+  color: #0074d9;
+}
+.image-container button:active {
+  background-color: #0074d9;
+}
+
+.image-container a {
+  text-decoration: none;
+  color: #fff;
+}
+.image-container a:hover {
   color: #0074d9;
 }
 
@@ -310,54 +320,78 @@ footer .copyright p {
   position: absolute;
 }
 
-/* Stijlen voor de productencontainer op de specifieke pagina */
-.rijenproducten #producten {
-  text-align: center;
-  margin-top: 100px;
-}
-.rijenproducten #producten h1 {
-  font-size: 1.5rem;
-}
-.rijenproducten #producten .product-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
+/* Productdetailcontainer */
+.product-detail {
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
-.rijenproducten #producten .product {
-  width: 300px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
+
+/* Productafbeelding */
+.product-detail img {
+  max-width: 100%;
   border-radius: 5px;
-  text-align: center;
 }
-.rijenproducten #producten .product h2 {
-  font-size: 1.2rem;
+
+/* Productinformatie */
+.product-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
-.rijenproducten #producten .product p {
+
+.product-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 16px;
   margin: 10px 0;
 }
-.rijenproducten #producten .product .add-to-cart {
+
+/* Prijs */
+.product-price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 24px;
+}
+.product-price .original-price {
+  margin-right: 10px;
+}
+
+/* Voorraad en levering */
+.product-stock {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Winkel en ophaalopties */
+.order-button {
   background-color: #0074d9;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 20px;
 }
-.rijenproducten #producten .product .add-to-cart:hover {
+.order-button:hover {
   background-color: #005aa3;
 }
-.rijenproducten #producten .product img {
-  width: 250px;
-  height: 170px;
-  border-radius: 10%;
+
+/* Extra opties */
+.extra-options {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.extra-options .warranty {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
