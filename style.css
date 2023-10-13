@@ -190,6 +190,16 @@ nav {
 #producten .product .add-to-cart:hover {
   background-color: #005aa3;
 }
+#producten .product .add-to-cart a {
+  color: #fff;
+  text-decoration: none;
+}
+#producten .product .add-to-cart a:hover {
+  text-decoration: none;
+}
+#producten .product .add-to-cart a:active {
+  text-decoration: none;
+}
 #producten .product img {
   width: 250px;
   height: 170px;
