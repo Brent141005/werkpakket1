@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>producten</title>
+    <title>Playstation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav>
     <ul class="navbar">
         <li><a href="startpagina.html">Home</a></li>
@@ -20,33 +21,27 @@
 </nav>
 
 <div class="image-container">
-    <img src="afbeeldingen/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg" alt="afbeelding controller">
-    <h1>Producten</h1>
+    <img src="afbeeldingen/fabian-albert--yePUylDPJQ-unsplash.jpg" alt="afbeelding controller">
+    <h1>Playstion</h1>
 </div>
 
+<div class="filters"> <!-- Filters sectie -->
+    <label><input type="checkbox" id="console-filter"> Console</label>
+    <label><input type="checkbox" id="controller-filter"> Controller</label>
+    <label><input type="checkbox" id="games-filter"> Games</label>
+    <button class="filter-button">Filter</button> <!-- Voeg de knop toe -->
+</div>
+
+
 <div id="producten">
-    <h1>Onze Producten</h1>
+    <h1>Producten in de kijker</h1>
     <ul class="product-list">
         <li class="product">
             <h2>Playstation 5</h2>
             <img src="afbeeldingen/nik-wmY7gKdYSmI-unsplash.jpg">
             <p>Playstation PS5 825 GB</p>
             <p>Prijs: €559,00</p>
-            <button class="add-to-cart">Bekijk</button>
-        </li>
-        <li class="product">
-            <h2>Xbox series X</h2>
-            <img src="afbeeldingen/billy-freeman-DPOdCl4bGJU-unsplash.jpg">
-            <p>MICROSOFT Xbox Series X 1TB</p>
-            <p>Prijs: €544,00</p>
-            <button class="add-to-cart">Bekijk</button>
-        </li>
-        <li class="product">
-            <h2>Nintendo Switch</h2>
-            <img src="afbeeldingen/tobiah-ens-bHnbqJBTwLs-unsplash.jpg">
-            <p>NINTENDO Switch Rood / Blauw</p>
-            <p>Prijs: €290,00</p>
-            <button class="add-to-cart">Bekijk</button>
+            <button class="add-to-cart"><a href="itempage.html">Bekijk</a></button>
         </li>
         <li class="product">
             <h2>Ps5 controller</h2>
@@ -56,22 +51,16 @@
             <button class="add-to-cart">Bekijk</button>
         </li>
         <li class="product">
-            <h2>Xbox controller</h2>
-            <img src="afbeeldingen/oli-woodman-0v0VzQW_oqo-unsplash.jpg">
-            <p>MICROSOFT Draadloze controller Xbox Series</p>
-            <p>Prijs: €65,00</p>
-            <button class="add-to-cart">Bekijk</button>
-        </li>
-        <li class="product">
-            <h2>Nintendo switch controller</h2>
-            <img src="afbeeldingen/sara-kurfess-jqpRECmiNEU-unsplash.jpg">
-            <p>NINTENDO Switch Joy-Con-controllerset</p>
-            <p>Prijs: $75,00</p>
+            <h2>Ps4 controller</h2>
+            <img src="afbeeldingen/pexels-stas-knop-2520829.jpg">
+            <p>PLAYSTATION Draadloze controller PS4 Dualshock 4</p>
+            <p>Prijs: €59,99</p>
             <button class="add-to-cart">Bekijk</button>
         </li>
 
     </ul>
 </div>
+
 
 <footer id="contact">
     <div class="footer-content">
@@ -94,6 +83,8 @@
         <p>&copy; 2023 Jouw Bedrijfsnaam. Alle rechten voorbehouden.</p>
     </div>
 </footer>
+
+
 
 </body>
 </html>

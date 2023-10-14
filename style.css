@@ -78,7 +78,6 @@ nav {
   transform: translate(-50%, -50%); /* Centreer zowel verticaal als horizontaal */
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px; /* Voeg wat ruimte binnen de rand toe */
-  border: 2px solid #fff; /* Witte rand */
   border-radius: 5px;
 }
 
@@ -402,6 +401,81 @@ footer .copyright p {
 .extra-options .warranty {
   font-weight: bold;
   margin-top: 10px;
+}
+
+/* Stijl voor filters */
+.filters {
+  text-align: center; /* Om de filters in het midden uit te lijnen */
+  margin: 10px;
+  padding-top: 30px;
+}
+.filters label {
+  display: inline-block; /* Plaats labels naast elkaar */
+  margin: 0 10px; /* Voeg wat ruimte tussen de labels toe */
+}
+.filters label input[type=checkbox] {
+  margin-right: 5px;
+}
+
+/* Stijl voor producten */
+.product-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-around; /* Voegt ruimte tussen de producten toe */
+}
+.product-list .product {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center; /* Centreer de tekst in de producten */
+}
+.product-list .product h2 {
+  font-size: 18px;
+  margin: 0;
+}
+.product-list .product p {
+  margin: 5px 0;
+}
+.product-list .product button {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product-list .product button a {
+  text-decoration: none;
+  color: white;
+}
+.product-list .product button:hover {
+  background-color: #0056b3;
+}
+
+/* Voeg extra stijl toe voor geselecteerde producten (optioneel) */
+.product.selected {
+  border: 2px solid #0074d9;
+}
+
+/* Voeg stijl toe voor de filterknop */
+.filter-button {
+  display: inline-block;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px; /* Voeg wat ruimte tussen de knop en de filters toe */
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
 }
 
 /*# sourceMappingURL=style.css.map */
