@@ -5,58 +5,63 @@ body {
   padding: 0;
 }
 
-/* Navigatiebalkstijlen */
+/* Navigatiebalk */
 nav {
   background-color: rgba(0, 116, 217, 0.9);
   padding: 15px 0;
   height: 50px;
-  opacity: 0.95; /* Transparantie */
+  opacity: 0.95;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Plaats de knoppen in het midden */
+  text-align: center;
 }
-
-.navbar {
+nav .navbar {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
-
-.navbar li {
+nav .navbar li {
   display: inline;
+  margin: 0 20px;
 }
-
-.navbar a {
+nav .navbar a {
   text-decoration: none;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin: 0 20px; /* Voeg wat ruimte tussen de knoppen toe */
 }
-
-.navbar a:hover {
+nav .navbar a:hover {
   background-color: #0074d9;
   border-color: #fff;
+}
+@media (max-width: 1260px) {
+  nav .navbar li {
+    display: inline;
+    margin: 0 10px;
+  }
 }
 
 /* Stijlen voor de image-container div */
 .image-container {
   width: 100%;
   height: 700px;
-  overflow: hidden; /* Verborgen overloop om afbeeldingen binnen de container te beperken */
-  position: relative; /* Vereist voor het positioneren van de afbeeldingen */
+  overflow: hidden;
+  position: relative;
 }
 
 /* Stijlen voor de afbeeldingen binnen de container */
 .image-container img {
-  width: 100%; /* Afbeeldingen vullen de breedte van de container */
-  height: auto; /* Hoogte aanpassen om de beeldverhoudingen te behouden */
-  display: block; /* Verwijder eventuele standaard spaties onder de afbeelding */
-  margin: 0 auto; /* Centreer de afbeelding horizontaal in de container */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   position: absolute;
-  top: -150px;
+  top: 0;
+  left: 0;
 }
 
 /* Stijlen voor de tekst "Welkom" en de knop "Producten" */
@@ -64,20 +69,21 @@ nav {
   font-size: 100px;
   color: #fff;
   position: absolute;
-  top: 30%; /* Plaats de tekst verticaal in het midden van de container */
-  left: 50%; /* Plaats de tekst horizontaal in het midden van de container */
-  transform: translate(-50%, -50%); /* Centreer zowel verticaal als horizontaal */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .image-container p {
   font-size: 30px;
   color: #fff;
   position: absolute;
-  top: 50%; /* Plaats de beschrijving verticaal onder de tekst */
-  left: 50%; /* Plaats de beschrijving horizontaal in het midden van de container */
-  transform: translate(-50%, -50%); /* Centreer zowel verticaal als horizontaal */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px; /* Voeg wat ruimte binnen de rand toe */
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -91,16 +97,13 @@ nav {
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
   position: absolute;
-  top: 70%; /* Plaats de knop verticaal onder de beschrijving */
-  left: 50%; /* Plaats de knop horizontaal in het midden van de container */
-  transform: translate(-50%, -50%); /* Centreer zowel verticaal als horizontaal */
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .image-container button:hover {
   background-color: #fff;
   color: #0074d9;
-}
-.image-container button:active {
-  background-color: #0074d9;
 }
 
 .image-container a {
@@ -111,20 +114,14 @@ nav {
   color: #0074d9;
 }
 
-/* Stijlen voor de knoppen in Disney Plus-stijl */
+/* Stijlen voor de knoppen */
 .image-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-
-.image-buttons img {
-  width: 450px;
-  height: 300px;
-  border-radius: 10%;
-}
-
-.image-button {
+.image-buttons .image-button {
   background-color: transparent;
   background-size: cover;
   background-position: center;
@@ -132,29 +129,44 @@ nav {
   border: none;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
-  margin: 50px 50px;
-  width: 450px; /* Pas de breedte van de knoppen aan */
-  height: 300px; /* Pas de hoogte van de knoppen aan */
+  margin: 20px;
+  width: 450px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
 }
-.image-button:hover {
+.image-buttons .image-button:hover {
   transform: scale(1.1);
 }
-
-.image-button p {
-  font-size: 300%;
+.image-buttons .image-button p {
+  font-size: 2rem;
+}
+.image-buttons .image-button img {
+  max-width: 100%;
+  border-radius: 10%;
 }
 
+@media (max-width: 1470px) {
+  .image-buttons {
+    flex-direction: column;
+  }
+  .image-button p {
+    margin: 3px;
+  }
+}
 /* Stijlen voor de productencontainer */
 #producten {
-  text-align: center;
   margin-top: 100px;
+  text-align: center;
   /* Stijlen voor de individuele producten */
 }
 #producten h1 {
   font-size: 1.5rem;
+  margin: 100px;
 }
 #producten .product-list {
-  list-style: none; /* Verwijder de lijststijlen */
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -215,8 +227,9 @@ footer {
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Plaats de inhoud verticaal in het midden */
+  align-items: center;
   text-align: center;
+  overflow: hidden;
   /* Stijlen voor de contactgegevens */
   /* Stijlen voor sociale media links */
   /* Stijlen voor het copyright-bericht */
@@ -242,6 +255,7 @@ footer .contact-info p {
 }
 footer .social-media {
   flex: 1;
+  max-width: 50%;
 }
 footer .social-media h3 {
   font-size: 1.2rem;
@@ -377,7 +391,6 @@ footer .copyright p {
   font-size: 18px;
 }
 
-/* Winkel en ophaalopties */
 .order-button {
   background-color: #0074d9;
   color: #fff;
@@ -393,25 +406,15 @@ footer .copyright p {
   background-color: #005aa3;
 }
 
-/* Extra opties */
-.extra-options {
-  margin-top: 20px;
-  font-size: 18px;
-}
-.extra-options .warranty {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
 /* Stijl voor filters */
 .filters {
-  text-align: center; /* Om de filters in het midden uit te lijnen */
+  text-align: center;
   margin: 10px;
   padding-top: 30px;
 }
 .filters label {
-  display: inline-block; /* Plaats labels naast elkaar */
-  margin: 0 10px; /* Voeg wat ruimte tussen de labels toe */
+  display: inline-block;
+  margin: 0 10px;
 }
 .filters label input[type=checkbox] {
   margin-right: 5px;
@@ -423,14 +426,14 @@ footer .copyright p {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  justify-content: space-around; /* Voegt ruimte tussen de producten toe */
+  justify-content: space-around;
 }
 .product-list .product {
   width: 300px;
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px;
-  text-align: center; /* Centreer de tekst in de producten */
+  text-align: center;
 }
 .product-list .product h2 {
   font-size: 18px;
@@ -455,11 +458,6 @@ footer .copyright p {
   background-color: #0056b3;
 }
 
-/* Voeg extra stijl toe voor geselecteerde producten (optioneel) */
-.product.selected {
-  border: 2px solid #0074d9;
-}
-
 /* Voeg stijl toe voor de filterknop */
 .filter-button {
   display: inline-block;
@@ -469,7 +467,7 @@ footer .copyright p {
   border-radius: 10%;
   padding: 5px 10px;
   cursor: pointer;
-  margin-left: 10px; /* Voeg wat ruimte tussen de knop en de filters toe */
+  margin-left: 10px;
   transition: background-color 0.3s;
   text-align: center;
 }
