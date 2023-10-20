@@ -1,0 +1,83 @@
+@use 'global' as *;
+
+
+/* Productdetailcontainer */
+.product-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Productafbeelding */
+.product-detail img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Productinformatie */
+.product-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Prijs */
+.product-price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 24px;
+
+  .original-price {
+    margin-right: 10px;
+  }
+
+
+}
+
+/* Voorraad en levering */
+.product-stock {
+  margin-top: 20px;
+  font-size: 18px;
+
+}
+
+
+  .order-button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: #005aa3;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+

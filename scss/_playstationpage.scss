@@ -1,0 +1,82 @@
+@use 'global' as *;
+
+/* Stijl voor filters */
+.filters {
+  text-align: center;
+  margin: 10px;
+  padding-top: 30px;
+
+  label {
+    display: inline-block;
+    margin: 0 10px;
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  }
+}
+
+/* Stijl voor producten */
+.product-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-around;
+
+  .product {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+
+    h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    button {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+
+
+
+/* Voeg stijl toe voor de filterknop */
+.filter-button {
+  display: inline-block;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
